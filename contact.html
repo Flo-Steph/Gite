@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — La Parenthèse sur Loire</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div data-include="partials/header.html"></div>
+
+    <main class="section">
+      <div class="container section-head">
+        <h1>Contact</h1>
+        <p>Pour toute question, vous pouvez réserver via Airbnb/Booking, ou nous écrire.</p>
+      </div>
+
+      <div class="container contact-grid">
+        <div class="card card-pad">
+          <h2>Infos</h2>
+          <p><strong>Gîte :</strong> La Parenthèse sur Loire</p>
+          <p><strong>Ville :</strong> Saint-Florent-le-Vieil</p>
+
+          <div class="stack">
+            <a class="btn btn-primary" href="https://www.airbnb.fr/rooms/1499375370193811052" target="_blank" rel="noopener noreferrer">Réserver sur Airbnb</a>
+            <a class="btn btn-ghost" href="https://www.booking.com/hotel/fr/la-parenthese-sur-loire-at-stephanie-and-florians.fr.html" target="_blank" rel="noopener noreferrer">Réserver sur Booking</a>
+          </div>
+        </div>
+
+        <form class="card card-pad" action="#" method="post">
+          <h2>Formulaire (placeholder)</h2>
+          <p class="muted">En site statique, l’envoi nécessite un service (Formspree, Netlify Forms…).</p>
+
+          <label>
+            Nom
+            <input type="text" name="name" placeholder="Votre nom" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="vous@email.com" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Votre message..."></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+    <script src="assets/js/include.js"></script>
+  </body>
+</html>
